@@ -1,5 +1,5 @@
 // RECUPERE LES ELEMENTS DU DOM
-let ecran = document.querySelector(".ecran p");
+let ecran = document.querySelector(".texteCalcule");
 //SELECTIONNE ELEMENT ET ON LE TRANSFORME EN TABLEAU 
 let touches = [...document.querySelectorAll(".btn")];
 
