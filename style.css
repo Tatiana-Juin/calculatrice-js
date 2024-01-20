@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.calculatrice {
+    margin-top: 30px;  
+    width:14vw; 
+    border:1px solid blue;
+}
+
+.ecran{
+    background-color: #E5E5E5;
+    height:40px;
+   
+}
+
+.btn{
+    width:100%;
+   padding :25px;
+   border:none;
+   cursor: pointer;
+}

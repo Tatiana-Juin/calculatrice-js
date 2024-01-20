@@ -8,61 +8,63 @@
 </head>
 <body>
     
-    <h1> Calculatrice </h1>
+    <!-- <h1> Calculatrice </h1> -->
   
-    <div class="calculatrice">
-      <!-- pour afficher le resultat dans l'écran -->
-        <div class="ecran"> </div>
-        <table>
-            
-            <tbody>
-                <tr>
-                    <td> <button data-key="8" class="btn"> C </button> </td>
-                    <td> <button data-key="53" class="btn"> ( </button> </td>
-                    <td> <button data-key="219" class="btn"> ) </button> </td>
-                    <td> <button data-key="111" class="btn"> / </button> </td>
-                    
-                </tr>
-                <tr>
-                    
-                    <td> <button data-key="103" class="btn"> 7 </button> </td>
-                    <td> <button data-key="104" class="btn"> 8 </button> </td>
-                    <td> <button data-key="105" class="btn"> 9 </button> </td>
-                    <td> <button data-key="106" class="btn"> * </button> </td>
-                    
-                </tr>
+  <main>
+        <div class="calculatrice">
+          <!-- pour afficher le resultat dans l'écran -->
+            <div class="ecran">
+                <p></p>    
+            </div>
+            <table>
                 
-                <tr>
+                <tbody>
+                    <tr>
+                        <td colspan="3"> <button data-key="8" class="btn"> C </button> </td>
+                        <td> <button data-key="111" class="btn"> / </button> </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td> <button data-key="103" class="btn"> 7 </button> </td>
+                        <td> <button data-key="104" class="btn"> 8 </button> </td>
+                        <td> <button data-key="105" class="btn"> 9 </button> </td>
+                        <td> <button data-key="106" class="btn"> * </button> </td>
+                        
+                    </tr>
                     
-                    <td> <button data-key="100" class="btn"> 4 </button> </td>
-                    <td> <button data-key="101" class="btn"> 5 </button> </td>
-                    <td> <button data-key="102" class="btn"> 6 </button> </td>
-                    <td> <button data-key="109" class="btn"> - </button> </td>
+                    <tr>
+                        
+                        <td> <button data-key="100" class="btn"> 4 </button> </td>
+                        <td> <button data-key="101" class="btn"> 5 </button> </td>
+                        <td> <button data-key="102" class="btn"> 6 </button> </td>
+                        <td> <button data-key="109" class="btn"> - </button> </td>
+                        
+                    </tr>
                     
-                </tr>
+                    <tr>
+                        
+                        <td> <button data-key="97" class="btn"> 1 </button> </td>
+                        <td> <button data-key="98" class="btn"> 2 </button> </td>
+                        <td> <button data-key="99" class="btn"> 3 </button> </td>
+                        <td> <button data-key="107" class="btn"> + </button> </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td> <button data-key="96" class="btn"> 0 </button> </td>
+                        <td> <button data-key="110" class="btn"> . </button> </td>
+                        <td colspan="2"> <button data-key="13" class="btn"> = </button> </td>
+                        
+                        
+                    </tr>
+                </tbody>
                 
-                <tr>
-                    
-                    <td> <button data-key="97" class="btn"> 1 </button> </td>
-                    <td> <button data-key="98" class="btn"> 2 </button> </td>
-                    <td> <button data-key="99" class="btn"> 3 </button> </td>
-                    <td> <button data-key="107" class="btn"> + </button> </td>
-                    
-                </tr>
-                <tr>
-                    
-                    <td> <button data-key="96" class="btn"> 0 </button> </td>
-                    <td> <button data-key="110" class="btn"> . </button> </td>
-                    <td colspan="2"> <button data-key="13" class="btn"> = </button> </td>
-                    
-                    
-                </tr>
-            </tbody>
-            
-            
-        </table>
-     
-    </div>
+                
+            </table>
+         
+        </div>
+    </main>
 
     <!-- SCRIPT JS -->
     <script src="script.js"></script>
