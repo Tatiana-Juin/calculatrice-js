@@ -27,4 +27,6 @@ SINON
    
 switch (touche) ALORS
     case 'C' : 
-    affichae ="";
+    affichage ="";
+    operation= null;
+    ecran.innerText = affichage;

@@ -38,22 +38,25 @@ function gererTouche(){
                 break;
         
             case '/':
-                operation="/";
-                console.log(operation);
-                break;
                 
             case '*': 
-                operation="*"
-                console.log(operation);
-                break;
+               
             case '-':
-                operation="-"
-                console.log(operation);
-                break;
             case '+':
-                operation="+"
-                console.log(operation);
+               
+                // pour récuperer valeur précédente
+                precedent = (precedent ===0 ) ? parseFloat(affichage) : calculer(precedent, parseFloat(affichage),operation)
+                // pour afficher le nb 
+                ecran.innerText = precedent;
+                //pour récupérer l'operation
+                operation = touche;
+                // initialise affichage a vide
+                affichage="";
+                
                 break;
+            
+            case "=":
+                
         }
 
     }
