@@ -5,8 +5,10 @@ let touches = [...document.querySelectorAll(".btn")];
 
 //precedent => recupére le resultat du calcule 
 let precedent = 0; 
-// actuel => pour faire le calcule 
-let actuel=0;
+// affichage => pour faire le calcule 
+let affichage='';
+// pour les opération 
+let operation = null;
 
 // Pour récupérer toutes les touches
 for(let touche of touches){
@@ -20,10 +22,41 @@ for(let touche of touches){
 function gererTouche(){
     // récupérer la valeur des touches 
     let touche = this.innerText;
-    console.log(touche);
+    // console.log(touche);
+    // Pour affichager plusieurs chiffre ou nb a virgule 
+    if(parseFloat(touche) >=0 || touche==="."){
+        affichage = (affichage==="") ? touche.toString() : affichage + touche.toString();
+        ecran.innerText = affichage;
+    }else{ // operateur et C
 
-    ecran.innerText=touche
+        switch (touche) {
+            case 'C':
+                affichage = "";
+                precedent = 0; 
+                operation =null;
+                ecran.innerText=affichage;
+                break;
+        
+            case '/':
+                operation="/";
+                console.log(operation);
+                break;
+                
+            case '*': 
+                operation="*"
+                console.log(operation);
+                break;
+            case '-':
+                operation="-"
+                console.log(operation);
+                break;
+            case '+':
+                operation="+"
+                console.log(operation);
+                break;
+        }
 
+    }
     
 }
 
@@ -34,11 +67,11 @@ function gererTouche(){
  * @param {string} operateur 
  * @returns number
  */
-function calculer(nb1,nb2,operateur){
-    if(operateur ==="/") return nb1 / nb2;
-    if(operateur === "*" ) return nb1 * nb2;
-    if(operateur ==="-" ) return nb1 - nb2;
-    if(operateur ==="+") return nb1 + nb2;
+function calculer(nb1,nb2,operation){
+    if(operation ==="/") return nb1 / nb2;
+    if(operation === "*" ) return nb1 * nb2;
+    if(operation ==="-" ) return nb1 - nb2;
+    if(operation ==="+") return nb1 + nb2;
 }
 
 
