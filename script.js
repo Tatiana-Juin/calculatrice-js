@@ -56,7 +56,13 @@ function gererTouche(){
                 break;
             
             case "=":
+                precedent = (precedent ===0 ) ? parseFloat(affichage) : calculer(precedent, parseFloat(affichage),operation)
                 
+                ecran.innerText = precedent;
+
+                affichage=precedent;
+                precedent = 0;
+                break;
         }
 
     }
